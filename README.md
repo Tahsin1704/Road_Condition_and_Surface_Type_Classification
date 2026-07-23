@@ -4,9 +4,7 @@
 
 ## 📖 Project Overview
 
-**Road Condition and Surface Type Classification Using Machine Learning** is a machine learning project developed to automatically identify road conditions and road surface types using accelerometer-derived vibration features and vehicle speed data. The system analyzes accelerometer signals collected from moving vehicles, applies signal preprocessing and feature engineering techniques, and trains multiple machine learning models to classify road conditions and surface types with high accuracy.
-
-The project is designed to support intelligent transportation systems, road quality assessment, predictive road maintenance, and smart city applications by providing an automated and data-driven approach to classifying road conditions and road surface types.
+**Road Condition and Surface Type Classification Using Machine Learning** is designed to automatically classify road conditions and road surface types using accelerometer-derived vibration features and vehicle speed data. The system applies signal preprocessing, feature extraction, and supervised machine learning techniques to analyze driving data and classify road conditions into **Good, Regular, and Bad**, and road surface types into **Asphalt, Cobblestone, and Dirt**. Multiple machine learning models, including **Decision Tree, Random Forest, XGBoost, LightGBM, and CatBoost**, were trained and evaluated to identify the best-performing models. The proposed system supports **road quality assessment**, **predictive road maintenance**, and **intelligent transportation systems** by providing an automated and data-driven approach to road condition and surface type classification.
 
 ### 🔹 Project Summary
 
@@ -47,22 +45,22 @@ The project is designed to support intelligent transportation systems, road qual
 ---
 
 
-
 # ⚙️ Methodology
 
 ### 📌 Data Processing Pipeline
 
-📂 Driver Vibration & Vehicle Speed Data Collection  
-→ 📥 Dataset Loading  
-→ 🧹 Data Preprocessing  
-→ ⚙️ Accelerometer Signal Filtering (Butterworth High-Pass Filter)  
-→ 🪟 Sliding Window Segmentation  
-→ 📊 Statistical & Frequency-Domain Feature Extraction  
-→ 🏷️ Label Encoding  
-→ ✂️ Train-Test Split (80:20)  
-→ 🤖 Machine Learning Model Training  
-→ 📈 Model Evaluation  
-→ 🛣️ Road Condition & Surface Type Classification
+Driver Vibration & Vehicle Speed Data Collection  
+→ Data Preprocessing  
+→ Accelerometer Signal Filtering (Butterworth High-Pass Filter)  
+→ Sliding Window Segmentation  
+→ Statistical & Frequency-Domain Feature Extraction  
+→ Label Preparation & Encoding  
+→ Train-Test Split (80:20)  
+→ Machine Learning Model Training (Decision Tree, Random Forest, XGBoost, LightGBM, CatBoost)  
+→ Model Evaluation (Accuracy, Precision, Recall, F1-Score & Confusion Matrix)  
+→ Best Model Selection  
+→ Road Condition & Surface Type Prediction
+
 
 ---
 
@@ -122,18 +120,6 @@ The following supervised machine learning algorithms were implemented and evalua
 
 
 ---
-
-# ✨ Key Features
-
-- Automatic road condition classification
-- Automatic road surface type classification
-- Accelerometer vibration signal preprocessing
-- Butterworth high-pass signal filtering
-- Statistical and frequency-domain feature extraction
-- Vehicle speed feature integration
-- Multiple machine learning model comparison
-- Performance evaluation using classification metrics
-- Road condition and surface type classification from extracted features
 
 ---
 
