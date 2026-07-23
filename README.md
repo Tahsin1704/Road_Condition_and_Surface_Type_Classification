@@ -31,7 +31,6 @@ The project is designed to support intelligent transportation systems, road qual
 |----------|--------:|
 | Sensor Dataset | **144,036 × 32** |
 | Label Dataset | **144,036 × 14** |
-| Extracted ML Dataset | **1,125 × 20** |
 
 ### 🛣️ Road Condition Classes
 
@@ -47,33 +46,23 @@ The project is designed to support intelligent transportation systems, road qual
 
 ---
 
-# ⚙️ Methodology
+
 
 # ⚙️ Methodology
 
 ### 📌 Data Processing Pipeline
 
-📂 Data Collection (Accelerometer Vibration & Vehicle Speed Data)  
-⬇️  
-📥 Dataset Loading  
-⬇️  
-🧹 Data Preprocessing  
-⬇️  
-⚙️ Butterworth High-Pass Signal Filtering  
-⬇️  
-🪟 Sliding Window Segmentation  
-⬇️  
-📊 Feature Extraction  
-⬇️  
-🏷️ Label Encoding  
-⬇️  
-✂️ Train-Test Split (80:20)  
-⬇️  
-🤖 Machine Learning Model Training  
-⬇️  
-📈 Model Evaluation  
-⬇️  
-🛣️ Road Condition & Surface Type Classification
+📂 Driver Vibration & Vehicle Speed Data Collection  
+→ 📥 Dataset Loading  
+→ 🧹 Data Preprocessing  
+→ ⚙️ Accelerometer Signal Filtering (Butterworth High-Pass Filter)  
+→ 🪟 Sliding Window Segmentation  
+→ 📊 Statistical & Frequency-Domain Feature Extraction  
+→ 🏷️ Label Encoding  
+→ ✂️ Train-Test Split (80:20)  
+→ 🤖 Machine Learning Model Training  
+→ 📈 Model Evaluation  
+→ 🛣️ Road Condition & Surface Type Classification
 
 ---
 
@@ -138,13 +127,13 @@ The following supervised machine learning algorithms were implemented and evalua
 
 - Automatic road condition classification
 - Automatic road surface type classification
-- Vehicle sensor signal preprocessing
+- Accelerometer vibration signal preprocessing
 - Butterworth high-pass signal filtering
-- Statistical feature extraction
-- FFT-based feature extraction
+- Statistical and frequency-domain feature extraction
+- Vehicle speed feature integration
 - Multiple machine learning model comparison
 - Performance evaluation using classification metrics
-- Predicts road condition and surface type from sensor data
+- Road condition and surface type classification from extracted features
 
 ---
 
