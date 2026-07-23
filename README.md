@@ -66,7 +66,6 @@ Driver Vibration & Vehicle Speed Data Collection
 
 
 
----
 
 # 🤖 Machine Learning Models
 
